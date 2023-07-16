@@ -1,0 +1,56 @@
+{
+  "titulo": {
+    "__TYPE__": "StructuredTextContent",
+    "value": [
+      {
+        "type": "paragraph",
+        "content": {
+          "text": "Enim sunt ipsum aliquip id ipsum eu labore aliqua laborum eu velit in sunt."
+        }
+      }
+    ]
+  },
+  "descricao": {
+    "__TYPE__": "StructuredTextContent",
+    "value": [
+      {
+        "type": "paragraph",
+        "content": {
+          "text": "Officia cupidatat incididunt pariatur commodo labore est commodo officia est in sunt sit aliquip ut pariatur."
+        }
+      }
+    ]
+  },
+  "conteudo": {
+    "__TYPE__": "StructuredTextContent",
+    "value": [
+      {
+        "type": "paragraph",
+        "content": {
+          "text": "Exercitation fugiat aliquip sit dolor non amet cupidatat irure occaecat duis proident ullamco fugiat nostrud in. Ullamco exercitation in est laborum sint adipisicing cillum enim sint nisi. Cillum qui exercitation pariatur do."
+        }
+      }
+    ]
+  },
+  "capa": {
+    "__TYPE__": "ImageContent",
+    "origin": {
+      "id": "main",
+      "url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04",
+      "width": 4000,
+      "height": 4000
+    },
+    "url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04",
+    "width": 4000,
+    "height": 4000,
+    "edit": {
+      "zoom": 1,
+      "crop": {
+        "x": 0,
+        "y": 0
+      },
+      "background": "transparent"
+    },
+    "thumbnails": {}
+  }
+}

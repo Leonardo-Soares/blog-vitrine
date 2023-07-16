@@ -4,13 +4,16 @@ import { client } from '../services/prismicClient'
 import useSWR from 'swr'
 import ButtonSolid from '../components/Buttons/ButtonSolid'
 import ButtonOutline from '../components/Buttons/ButtonOutline'
+import CardBlog from '../components/Card/CardBlog'
 
 // type inferedTypes = InferGetStaticPropsType<typeof getStaticProps>
 
 const Home: NextPage = () => {
-  const { data: bannersHome } = useSWR('banners_da_home', () =>
-    client.getSingle('banners_da_home')
+  const { data: bannersHome } = useSWR('getBlogHome', () =>
+    client.getAllByType('blog')
   )
+
+  // console.log(bannersHome);
 
   return (
     <div>
@@ -20,9 +23,19 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="flex items-center justify-center flex-col gap-5 pt-4 h-screen">
-        <h1>Front-end Next 12 Template</h1>
-        <ButtonSolid>Button Solid</ButtonSolid>
-        <ButtonOutline>Button Outline</ButtonOutline>
+        <section className=" max-w-6xl my-40">
+          <h1 className='mx-auto text-center text-4xl font-bold text-[#03312b]'>Blog Kuara Engenharia</h1>
+          <div className="mx-auto grid  grid-cols-1 gap-6 p-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+            {bannersHome && bannersHome.map((item: any, index: number) => (
+              <CardBlog
+                key={index}
+                banner={item.data.capa.url} // Acessando a propriedade "url" do objeto "capa"
+                titulo={item.data.titulo[0].text} // Acessando o texto dentro do array "titulo"
+                descricao={item.data.descricao[0].text} // Acessando o texto dentro do array "descricao"
+              />
+            ))}
+          </div>
+        </section>
       </main>
     </div>
   )

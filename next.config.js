@@ -10,11 +10,13 @@ const nextConfig = {
   },
 };
 
-module.exports = () => {
-
+module.exports = (nextConfig = {}) => {
   const plugins = [];
   const config = plugins.reduce((acc, next) => next(acc), {
     ...nextConfig,
+    images: {
+      domains: ['images.prismic.io'],
+    },
   });
   return config;
 };

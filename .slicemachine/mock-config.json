@@ -1,19 +1,10 @@
 {
   "_cts": {
-    "contatos": {},
     "banners_da_home": {
       "banners": {}
     },
-    "enderecos": {
-      "endereco": {}
-    },
-    "servico": {},
-    "clientes": {},
-    "equipe": {
-      "lista": {}
-    },
     "post": {},
-    "sobre_nos": {}
+    "blog": {}
   },
   "slices": {}
 }
