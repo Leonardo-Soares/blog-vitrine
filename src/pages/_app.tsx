@@ -50,19 +50,19 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <DefaultSeo
-        title="_____SiteName_____"
-        description="___SiteDescription___    "
+        title="Blog"
+        description="Blog"
         canonical="https://vercel.app/"
         openGraph={{
           url: 'https://vercel.app/',
-          title: '_____SiteName_____',
+          title: 'Blog',
           description: '___SiteDescription___',
           images: [
             {
               url: '/img/seo.png',
               width: 1200,
               height: 627,
-              alt: '_____SiteName_____',
+              alt: 'Blog',
               type: 'image/png',
             },
           ],
@@ -85,7 +85,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
           ) : (
             <Component {...pageProps} />
           )}
-          <Footer />
+          {/* <Footer />*/}
           <BoxCookies />
           <Modals />
           <ToasterComponent />

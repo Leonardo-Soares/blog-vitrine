@@ -2,10 +2,7 @@ import React from 'react'
 
 const Analytics = () => (
   <>
-    <script
-      async
-      src={`https://www.googletagmanager.com/gtag/js?id=G-P9V9XQFQJ3`}
-    />
+
     <script
       dangerouslySetInnerHTML={{
         __html: `

@@ -46,9 +46,6 @@ export default function Footer() {
               <strong>Siga nos</strong>
               <div className="flex gap-2">
                 <a href="/" rel="noreferrer" target="_blank">
-                  <Icon icon="mdi:facebook" className="text-white text-xl" />
-                </a>
-                <a href="/" rel="noreferrer" target="_blank">
                   <Icon icon="mdi:instagram" className="text-white text-xl" />
                 </a>
               </div>
